@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraintLayout">
+
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="243dp"-->
+    <!--            android:layout_height="279dp"-->
+    <!--            android:background="?attr/colorPrimary"-->
+    <!--            app:popupTheme="@style/AppTheme.PopupOverlay" tools:layout_conversion_absoluteHeight="56dp"-->
+    <!--            tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="0dp"-->
+    <!--            tools:layout_conversion_absoluteWidth="411dp"/>-->
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:title="@string/app_name"/>
+
+    <TextView
+            android:textSize="30sp"
+            android:gravity="end|bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/cal_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginEnd="8dp" android:layout_marginStart="8dp" android:layout_marginTop="28dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/cal_result"/>
+    <!--    ><GridLayout-->
+<!--            android:rowCount="5"-->
+<!--            android:columnCount="4"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="430dp"-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:id="@+id/gridLayout" app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            android:layout_marginBottom="8dp" app:layout_constraintTop_toBottomOf="@+id/cal_result"-->
+<!--            android:layout_marginEnd="4dp" android:layout_marginStart="4dp" android:useDefaultMargins="true"-->
+<!--            android:alignmentMode="alignMargins">-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="0"-->
+<!--                android:layout_column="0"-->
+<!--                android:text="CLR"-->
+<!--                android:id="@+id/open_bracket"/>-->
+
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="0"-->
+<!--                android:layout_column="1"-->
+<!--                android:text="DEL"-->
+<!--                android:id="@+id/del_button"/>-->
+
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="0"-->
+<!--                android:layout_column="2"-->
+<!--                android:text="%"-->
+<!--                android:id="@+id/percent_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="0"-->
+<!--                android:layout_column="3"-->
+<!--                android:text="+"-->
+<!--                android:id="@+id/plus_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_column="0"-->
+<!--                android:text="7"-->
+<!--                android:id="@+id/seven_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_column="1"-->
+<!--                android:text="8"-->
+<!--                android:id="@+id/eight_button" android:layout_width="wrap_content"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_column="2"-->
+<!--                android:text="9"-->
+<!--                android:id="@+id/nine_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_column="3"-->
+<!--                android:text="*"-->
+<!--                android:id="@+id/muliply_button" android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="2"-->
+<!--                android:layout_column="0"-->
+<!--                android:text="4"-->
+<!--                android:id="@+id/four_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="2"-->
+<!--                android:layout_column="1"-->
+<!--                android:text="5"-->
+<!--                android:id="@+id/five_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="2"-->
+<!--                android:layout_column="2"-->
+<!--                android:text="6"-->
+<!--                android:id="@+id/six_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="2"-->
+<!--                android:layout_column="3"-->
+<!--                android:text="-"-->
+<!--                android:id="@+id/minus_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="3"-->
+<!--                android:layout_column="0"-->
+<!--                android:text="1"-->
+<!--                android:id="@+id/one_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="3"-->
+<!--                android:layout_column="1"-->
+<!--                android:text="2"-->
+<!--                android:id="@+id/two_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="3"-->
+<!--                android:layout_column="2"-->
+<!--                android:text="3"-->
+<!--                android:id="@+id/three_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="3"-->
+<!--                android:layout_column="3"-->
+<!--                android:text="/"-->
+<!--                android:id="@+id/divide_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="4"-->
+<!--                android:layout_column="0"-->
+<!--                android:text="0"-->
+<!--                android:id="@+id/zero_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="4"-->
+<!--                android:layout_column="1"-->
+<!--                android:text="."-->
+<!--                android:id="@+id/period_button"/>-->
+<!--        <Button-->
+<!--                style="@style/FunctionalButtons"-->
+<!--                android:layout_row="4"-->
+<!--                android:layout_column="2"-->
+<!--                android:layout_columnSpan="2"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:background="#D76500"-->
+<!--                android:text="="-->
+<!--                android:id="@+id/equal_button"-->
+<!--                android:layout_width="172dp" android:layout_height="wrap_content"/>-->
+
+<!--    </GridLayout>-->
+
+    <TextView
+            android:textSize="50sp"
+            android:gravity="end|bottom"
+            android:layout_width="395dp"
+            android:textColor="#000"
+            android:layout_height="76dp" android:id="@+id/cal_result"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cal_input"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/include"/>
+    <include
+            layout="@layout/cal_buttons" android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/cal_result"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp" android:layout_marginTop="8dp"
+            android:id="@+id/include"></include>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
